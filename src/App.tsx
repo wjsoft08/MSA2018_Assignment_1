@@ -29,10 +29,10 @@ export default class App extends React.Component<{}, IState> {
       theme: themes.dark,
       toggleTheme: this.toggleTheme(),
     };
-    
   }
+
   public componentDidMount(){
-  	fetch(`https://api.coinmarketcap.com/v2/ticker/?limit=10`)
+  	fetch(`https://jsonplaceholder.typicode.com/users`)
  		.then(result=>result.json())
     .then(json => {
       this.setState({

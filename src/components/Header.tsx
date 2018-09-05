@@ -14,6 +14,7 @@ export const Header: React.StatelessComponent<{}> = () => {
                         <Link style={{color: "white"}} to="/">dankNotDank</Link>
                         <Link style={{color: "white"}} to="/FirstComponent"> Page 1 </Link>
                         <Link style={{color: "white"}} to="/SecondComponent"> Page 2 </Link>
+                        <Link style={{color: "white"}} to="/CryptoPrice"> CryptoPrice </Link>
                     </Typography>
                 </Toolbar>
             </AppBar>
