@@ -2,7 +2,6 @@ import * as React from 'react';
 import { BrowserRouter, Redirect, Route } from 'react-router-dom';
 import { Header } from './components/Header';
 import CryptoPrice from './CryptoPrice';
-
 import './css/styles.css';
 
 export const AppRouter: React.StatelessComponent<{}> = () => {
