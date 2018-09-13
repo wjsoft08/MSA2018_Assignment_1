@@ -1,10 +1,8 @@
 import * as React from 'react';
 import { BrowserRouter, Redirect, Route } from 'react-router-dom';
-import App from './App'
-import CryptoPrice from './components/CryptoPrice';
-import FirstComponent from './components/FirstComponent';
 import { Header } from './components/Header';
-import SecondComponent from './components/SecondComponent';
+import CryptoPrice from './CryptoPrice';
+
 import './css/styles.css';
 
 export const AppRouter: React.StatelessComponent<{}> = () => {
@@ -14,10 +12,7 @@ export const AppRouter: React.StatelessComponent<{}> = () => {
             <div>
                 <Header />
                 <main>
-                    <Route exact={true} path="/" component={App} />
-                    <Route path="/FirstComponent" component={FirstComponent} />
-                    <Route path="/SecondComponent" component={SecondComponent} />
-                    <Route path="/CryptoPrice" component={CryptoPrice} />
+                    <Route exact={true} path="/" component={CryptoPrice} />
                     <Redirect from='*' to='/' />
                 </main>
             </div>
